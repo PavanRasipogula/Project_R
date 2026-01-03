@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: 'Inter', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #130420;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+@layer utilities {
+  .glass {
+    background: rgba(255, 255, 255, 0.03);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+
+  .glass-card {
+    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+
+  .text-gradient {
+    background: linear-gradient(to right, #ffffff, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .neu-btn {
+    border-radius: 9999px;
+    background: #130420;
+    box-shadow: 5px 5px 10px #0c0214, -5px -5px 10px #1a062c;
+    transition: all 0.3s ease;
+  }
+
+  .neu-btn:hover {
+    box-shadow: inset 5px 5px 10px #0c0214, inset -5px -5px 10px #1a062c;
+    color: #a78bfa;
+  }
+
+  .animate-spin-reverse {
+    animation: spin-reverse 1s linear infinite;
+  }
+
+  @keyframes spin-reverse {
+    from {
+      transform: rotate(360deg);
+    }
+
+    to {
+      transform: rotate(0deg);
+    }
+  }
+}
