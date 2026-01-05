@@ -52,7 +52,7 @@ const Contact = () => {
     };
 
     return (
-        <section id="contact" className="py-24 px-6 max-w-7xl mx-auto">
+        <section id="contact" className="py-12 px-6 max-w-7xl mx-auto">
             {/* Centered Header */}
             <div className="text-center mb-16 max-w-2xl mx-auto">
                 <div className="inline-block px-4 py-2 rounded-full glass border border-white/10 mb-6">

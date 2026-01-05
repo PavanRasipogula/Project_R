@@ -140,7 +140,7 @@ const Projects = () => {
     }, []);
 
     return (
-        <section id="projects" className="py-24 px-6 max-w-7xl mx-auto">
+        <section id="projects" className="py-12 px-6 max-w-7xl mx-auto">
             <div className="mb-16">
                 <h2 className="text-4xl font-bold text-white tracking-tight">Academic & Key Projects</h2>
                 <p className="text-gray-400 mt-2">A timeline of research and development from B.Tech to PhD.</p>

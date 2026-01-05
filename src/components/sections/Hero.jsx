@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Twitter, Instagram } from 'lucide-react';
 import profile1 from "../../assets/Profiles/profile1.jpeg";
+import heroBg from "../../assets/hero_bg.png";
 
 // Threads Icon Component (Custom SVG)
 const ThreadsIcon = () => (
@@ -15,11 +16,14 @@ const ThreadsIcon = () => (
 const Hero = () => {
     return (
         <section id="home" className="relative h-screen w-full flex items-center justify-center overflow-hidden bg-[#130420]">
-            {/* Abstract Background Gradient */}
+            {/* Background Image with Blur & Overlay */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] bg-purple-900/30 rounded-full blur-[100px] animate-pulse"></div>
-                <div className="absolute bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-violet-900/20 rounded-full blur-[100px] animate-pulse delay-700"></div>
-                <div className="absolute top-[20%] right-[20%] w-[20%] h-[20%] bg-indigo-900/20 rounded-full blur-[80px]"></div>
+                <img
+                    src={heroBg}
+                    alt="Background"
+                    className="w-full h-full object-cover opacity-60 blur-sm scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-[#130420] via-[#130420]/80 to-[#130420]/40"></div>
             </div>
 
             {/* Content Overlay */}
