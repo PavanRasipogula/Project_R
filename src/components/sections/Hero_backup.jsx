@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Github, Linkedin, Mail, Twitter, Instagram } from 'lucide-react';
-import profile1 from "../../assets/Profiles/profile1.jpeg";
 
 // Threads Icon Component (Custom SVG)
 const ThreadsIcon = () => (
@@ -30,30 +29,15 @@ const Hero = () => {
                     transition={{ duration: 0.8 }}
                     className="space-y-6"
                 >
+
+
                     <div className="inline-block px-4 py-2 rounded-full glass border border-white/10 mb-4">
-                        <span className="text-primary-glow text-sm font-medium tracking-wide">SENIOR DATA ANALYST</span>
+                        <span className="text-primary-glow text-sm font-medium tracking-wide">SENIOR ANALYST</span>
                     </div>
 
                     <h1 className="text-6xl md:text-8xl font-bold tracking-tight leading-tight">
-                        <motion.span
-                            className="text-white inline-block cursor-default"
-                            initial={{ x: 100, opacity: 0 }}
-                            animate={{ x: 0, opacity: 1 }}
-                            transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
-                            whileHover={{ scale: 1.05, textShadow: "0 0 20px rgba(255,255,255,0.5)", transition: { duration: 0.2 } }}
-                        >
-                            Rajeswari
-                        </motion.span>
-                        <br />
-                        <motion.span
-                            className="text-gradient inline-block cursor-default"
-                            initial={{ x: 100, opacity: 0 }}
-                            animate={{ x: 0, opacity: 1 }}
-                            transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-                            whileHover={{ scale: 1.05, filter: "brightness(1.2)", transition: { duration: 0.2 } }}
-                        >
-                            Sivakumar
-                        </motion.span>
+                        <span className="text-white">Rajeswari</span> <br />
+                        <span className="text-gradient">Sivakumar</span>
                     </h1>
 
                     <p className="text-xl md:text-2xl text-text-muted mt-4 max-w-2xl mx-auto font-light">
@@ -93,14 +77,6 @@ const Hero = () => {
                             className="px-8 py-3 rounded-xl bg-primary hover:bg-primary-glow text-white font-semibold shadow-lg shadow-primary/30 transition-all cursor-pointer"
                         >
                             Download Resume
-                        </motion.a>
-                        <motion.a
-                            href="#projects"
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="px-8 py-3 rounded-xl bg-white/5 border border-white/10 text-white font-medium hover:bg-white/10 transition-all cursor-pointer"
-                        >
-                            View Projects
                         </motion.a>
                     </div>
                 </motion.div>
